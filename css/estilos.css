@@ -1,0 +1,30 @@
+.pimg1, .pimg2, .pimg3, .pimg4{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 500px;
+}
+
+.pimg1{
+    background-image: url(../imagenes/textil1.jpg);
+}
+.pimg2{
+    background-image: url(../imagenes/imagen2.jpg);
+}
+.pimg3{
+    background-image: url(../imagenes/imagen3.jpg);
+}
+.pimg4{
+    background-image: url(../imagenes/textil1.jpg);
+}
+
+.section{
+    padding: 50px 50px;
+}
+
+.section-blue{
+    color: white;
+    background-color: #007bff;
+}

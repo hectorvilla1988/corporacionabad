@@ -4,139 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Corporación Abad</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
+    <link rel="stylesheet" href="css/estilos.css"
+    <script src="../corporacionabad/js/smooth-scroll.min.js"></script>
+    <script>
+        smoothScrill.init({
+            selector: '[data-scroll]',
+            selectorHeader: null,
+            speed: 1000,
+            easing: 'easeInOutCubic',
+            offset: 0,
+            callback: function (anchor, toggle){}
+        });
+    </script>
 </head>
-<body>
+<body class="container">
     <header>
-        <div>
-            <a href="index.html"><img src="imagenes/logo.png"></a>
-        </div>
-        <nav>
-            <a href="#0">
-                <span>
-                    ::before
-                    "Cerrar"
-                    ::after
-                </span>
-            </a>
-        <div>
-            <h3>Conoce sobre nosotros</h3>
-            <ul>
-                <li>Inicio</li>
-                <li>Nosotros</li>
-                <li>Servicios</li>
-                <li>Clientes</li>
-                <li>Contáctanos</li>
-            </ul>
-            <p>Aquí va ubicado el eslogan de la corporación Abad</p>
-        </div>
+        <nav class="navbar navbar-dark bg-primary navbar-expand-lg sticky-top" >
+            <a href="index.html" class="navbar-brand"><img src="imagenes/logo1.png"></a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav ml-auto">
+                  <li class="navbar-item"><a href="#" class="nav-link">Inicio</a>
+                  </li>
+                  <li class="navbar-item"><a data-scroll href="#quienesSomos" class="nav-link">Quienes Somos</a>
+                  </li>
+                  <li class="navbar-item"><a data-scroll href="#servicios" class="nav-link">Servicios</a>
+                  </li>
+                  <li class="navbar-item"><a data-scroll href="#clientes" class="nav-link">Clientes</a>
+                  </li>
+                  <li class="navbar-item"><a data-scroll href="#contacto" class="nav-link">Contacto</a>
+                  </li>
+              </ul>
+          </div>
         </nav>
-    </header>
-    <section>
-        <img src="imagenes/textil.jpg" width="3000" height="2000" position="center">
-        <div class="home-content">
-            <div>
-                <h3>Bienvenidos a Corporación Abad</h3>
-                <h1>Aquí va a ir el mensaje de bienvenida</h1>
-                <div class="botones">
-                    <a href="#contacto">Contáctanos</a>
-                    <a href="#nosotros">Nosotros</a>
-                    ::after
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div>
-            <div>
-                <h3>Descripción de lo que hacen</h3>
-                <h1>Apoyo al titulo inicial</h1>
-            </div>
-        </div>
-    </section>
-    <div>
-        <div>
-            <p>Porqué hacen lo que hacen</p>
-        </div>
-    </div>
-    <section>
-        <div>
-            <div>
-                <h3>Que van a hacer por el negocio</h3>
-                <h1>Explicar porqué ayudan al negocio a hacer lo que hacen</h1>
-            </div>
-        </div>
-    </section>
-    <div>
-        <div>
-            <img src="">
-            <h3>Titulo del servicio</h3>
-            <p>Explicación del servicio</p>
-        </div>
-    </div>
-    <section>
-        <div>
-            <div>
-                <h3>Clientes</h3>
-                <h1>Conoce con quienes hemos trabajado</h1>
-            </div>
-        </div>
-        <div>
-            <div>
-                <div>
-                    <div>
-                        <div>
-                            <a href="logos"></a>
-                        </div>
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="imagenes/textil2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2>Uniformes Corporativos</h2>
+                      <h4>Nuestros productos tienen una alta calidad de elaboración, para representar mejor tu marca</h4>
                     </div>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagenes/packaging1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2>Paquetes a tu medida</h2>
+                      <h4>Desarrollamos empaques personalizados para envíos o regalos de tu empresa</h4>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagenes/mercado1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2>Estudios de Mercado</h2>
+                      <h4>Ayudamos a tu empresa a posicionarse en el mercado con nuestros estudios realizados por profesionales.</h4>
+                    </div>
+                  </div>
                 </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+
+    <div class="container-fluid" id="quienesSomos">
+
+        <section class="section section-blue" id="quienesSomos">
+        <h2>Quiénes Somos</h2>
+        <p class="text-justify">Somos una empresa con más de 10 años en el mercado peruano, lo que nos ha permitido diversificarnos a lo largo del tiempo, para traer y ofrecer no solo productos de calidad, sino que nuestra mejor atención y dedicación como tu aliado estratégico</p>
+        </section>
+
+        <div class="pimg2">
+        </div>
+        <section class="section section-blue" id="servicios">
+            <h2>Nuestros Servicios</h2>
+            <p class="text-justify">Tenemos amplia experiencia en lo que hacemos. Y podemos ayudar a tu negocio en lo que necesitas</p>
+            <div class="containter">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="iconos/textil.png" class="img-fluid w-33">
+                        <h3>Uniformes Corporativos</h3>
+                        <p class="text-justify">Productos hechos con material de alta calidad. </p>
+                    </div>
+                    <div class="col-4" class="img-fluid w-33">
+                        <img src="iconos/packaging.png">
+                        <h3>Packaging</h3>
+                        <p class="text-justify">Creatividad para tus promociones, ofertas, o para regalos corporativos.</p>
+                    </div>
+                    <div class="col-4" class="img-fluid w-33">
+                        <img src="iconos/mercados.png">
+                        <h3>Estudios de Mercado</h3>
+                        <p class="text-justify">¿Quieres saber cuál es la tendencia del mercado? Con nuestros estudios de alto nivel te ayudamos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="pimg3"></div>
+        <section class="section section-blue" id="clientes">
+        <h2>Qué dicen nuestros clientes</h2>
+        <p>Diversas empresas han trabajado con nosotros y esto es lo que dicen de nuestros servicios</p>
+        <div class="container">
+            <div class="row">
+                <div class="col">Empresa 1</div>
+                <div class="col">Empresas 2</div>
+                <div class="col">Empresa 3</div>
+                <div class="col">Empresa 4</div>
             </div>
         </div>
     </section>
-    <section>
-        <div></div>
-        <div></div>
-        <div>
-            <div>
-                <h3>Contáctanos</h3>
-                <h1>Estamos para ayudarte</h1>
-            </div>
-        </div>
-        <div>
-            <div>
-                <h3>Envía un mensaje</h3>
-                <form action=""></form>
-                <fieldset>
-                    <div>Nombre</div>
-                    <div>Email</div>
-                    <div>Asunto</div>
-                    <div>Mensaje</div>
-                    <div>Boton</div>
-                </fieldset>
-            </div>
-            <div>
-                <div>
-                    <h3>Información de Contacto</h3>
-                    <div>Donde nos encontramos</div>
-                    <h5>Donde nos encontramos</h5>
-                    <p>Dirección</p>
-                    <div>Envianos un correo</div>
-                    <h5>Envíanos un correo</h5>
-                    <p>contacto@xxxx.com</p>
-                    <div>Llámanos</div>
-                    <h5>Llámanos</h5>
-                    <p>51 999 999 999</p>
-                </div>
-            </div>
-        </div>
-    </section>
+</div>
+    <div class="pimg4"></div>
+</div>
+
     <footer>
         <div></div>
     </footer>
