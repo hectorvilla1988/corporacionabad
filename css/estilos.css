@@ -3,7 +3,6 @@
   background-color: #2bb5fc;
 }
 
-
 .pimg2, .pimg3, .pimg4{
     position: relative;
     background-position: center;
@@ -33,14 +32,14 @@
 }
 
 .img-fluid{
-  width: 150px;
+  width: 250px;
   height: auto;
   align-content: center;
 
 }
 
 .facebook{
-  width: 80px;
+  width: 65px;
   height: auto;
   align-items: center;
 }
@@ -75,7 +74,7 @@ form {
   }
   
   #boton{
-    background: #2bb5fc;
+    background: #0617ac;
     color: #ffffff;
     padding: 20px;
   }
