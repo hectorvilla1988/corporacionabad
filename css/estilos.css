@@ -1,4 +1,9 @@
 /* BACKGROUND STYLE */
+.navbar{
+  background-color: #2bb5fc;
+}
+
+
 .pimg2, .pimg3, .pimg4{
     position: relative;
     background-position: center;
@@ -6,10 +11,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 500px;
-    
-
 }
-
 
 .pimg2{
     background-image: url(../imagenes/marketing1.jpg);
@@ -27,7 +29,7 @@
 
 .section-blue{
     color: white;
-    background-color: #007bff;
+    background-color: #2bb5fc;
 }
 
 .img-fluid{
@@ -73,7 +75,7 @@ form {
   }
   
   #boton{
-    background: #25a2b7;
+    background: #2bb5fc;
     color: #ffffff;
     padding: 20px;
   }
