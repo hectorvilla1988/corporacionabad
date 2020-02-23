@@ -5,20 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Corporación Abad</title>
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
+
+    <!--SCROLL REVEAL --> 
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ESTILOS CSS -->
     <link rel="stylesheet" href="css/estilos.css">
-    <script src="../corporacionabad/js/smooth-scroll.min.js"></script>
-    <script>
-        smoothScrill.init({
-            selector: '[data-scroll]',
-            selectorHeader: null,
-            speed: 100,
-            easing: 'easeInOutCubic',
-            offset: 1,
-            callback: function (anchor, toggle){}
-        });
-    </script>
+
 </head>
 <body>
     <header>
@@ -29,7 +27,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav ml-auto">
-                  <li class="navbar-item text-white"><a href="#" class="nav-link">Inicio</a>
+                  <li class="navbar-item text-white"><a data-scroll href="#" class="nav-link">Inicio</a>
                   </li>
                   <li class="navbar-item"><a data-scroll href="#quienesSomos" class="nav-link">Quienes Somos</a>
                   </li>
@@ -106,19 +104,19 @@
             <div class="containter d-flex justify-content-center">
                 <div class="row">
                     <section class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                        <img src="iconos/mercados.png" class="img-fluid" id="wobble-hor-bottom">
-                        <h3>Estudios de Mercado</h3>
-                        <p class="text-justify">¿Quieres saber cuál es la tendencia del mercado? Con nuestros estudios de alto nivel te ayudamos.</p>
+                        <img src="iconos/mercados.png" class="img-fluid iconos">
+                        <h3 class="titulos">Estudios de Mercado</h3>
+                        <p class="text-justify texto">¿Quieres saber cuál es la tendencia del mercado? Con nuestros estudios de alto nivel te ayudamos.</p>
                     </section>
                     <section class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                        <img src="iconos/packaging.png" class="img-fluid" id="wobble-hor-bottom">
-                        <h3>Packaging</h3>
-                        <p class="text-justify">Creatividad para tus promociones, ofertas, o para regalos corporativos.</p>
+                        <img src="iconos/packaging.png" class="img-fluid iconos">
+                        <h3 class="titulos">Packaging</h3>
+                        <p class="text-justify texto">Creatividad para tus promociones, ofertas, o para regalos corporativos.</p>
                     </section>
                     <section class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                        <img src="iconos/textil.png" class="img-fluid" id="wobble-hor-bottom">
-                        <h3>Uniformes Escolares</h3>
-                        <p class="text-justify">Productos de alta calidad, hechos de mano de profesionales, para ofrecerte un alto estándar para tu colegio o institución.</p>
+                        <img src="iconos/textil.png" class="img-fluid iconos">
+                        <h3 class="titulos">Uniformes Escolares</h3>
+                        <p class="text-justify texto">Productos de alta calidad, hechos de mano de profesionales, para ofrecerte un alto estándar para tu colegio o institución.</p>
                     </section>
 
                     <div class="container">
@@ -152,7 +150,7 @@
 <div class="containter section section-blue">
   <div class="row">
     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-      <section>
+      <section class="fomulario">
         <form action="procesar.php" method="POST" >
         <h2 class="contacto">Contáctanos</h2>
         <p class="text-justify">Si quieres más información, escríbenos y déjanos tus datos y nuestros asesores te llamarán pronto.</p>
@@ -165,7 +163,7 @@
       </section>
     </div>  
     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-      <section>
+      <section class="informacion">
         <h2>Información</h2>
         <p><strong>Correo:</strong>contacto@corporacionabad.com</p>
         <p><strong>Teléfono:</strong> (51) 936 716 671</p>
@@ -181,9 +179,85 @@
       <p class="card-text"><a href="https://www.instagram.com/hector_villa" target="_blank">Desarrollado por Héctor Villa León</a></p>
     </div>
     </div>
+
+    <!-- BOOTSTRAP 4 SCRIPT -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>   
     <script src="https://widget.sirena.app/get?token=e3601d57154f4522a4c65e695f09be31"></script>
+
+    <!-- SCROLL REVEAL -->
+    <script>
+      window.sr = ScrollReveal();
+      sr.reveal('.navbar',{
+        duration: 2000,
+        origin: 'bottom'
+      });
+      window.sr = ScrollReveal();
+      sr.reveal('.quienesSomos',{
+        duration: 2000,
+        origin: 'top',
+        distance: '300px',
+      });
+      window.sr = ScrollReveal();
+      sr.reveal('.section',{
+        duration: 2000,
+        origin: 'bottom',
+        distance: '300px',
+      });
+      window.sr = ScrollReveal();
+      sr.reveal('.iconos',{
+        duration: 2000,
+        origin: 'topt',
+        distance: '300px',
+      });
+      window.sr = ScrollReveal();
+      sr.reveal('.iconos',{
+        duration: 2000,
+        origin: 'top',
+        distance: '300px',
+      });
+      window.sr = ScrollReveal();
+      sr.reveal('.titulos',{
+        duration: 2000,
+        origin: 'bottom',
+        distance: '300px',
+      });
+      window.sr = ScrollReveal();
+      sr.reveal('.texto',{
+        duration: 2000,
+        origin: 'bottom',
+        distance: '300px',
+      });
+      window.sr = ScrollReveal();
+      sr.reveal('.text-warning',{
+        duration: 2000,
+        origin: 'bottom',
+        distance: '300px',
+      });
+      window.sr = ScrollReveal();
+      sr.reveal('.fomulario',{
+        duration: 2000,
+        origin: 'left',
+        distance: '300px',
+      });
+      window.sr = ScrollReveal();
+      sr.reveal('.informacion',{
+        duration: 2000,
+        origin: 'right',
+        distance: '300px',
+      });
+
+      // smoth scrolling
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+  </script>
 </body>
 </html>

@@ -5,20 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Corporación Abad</title>
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
+
+    <!--SCROLL REVEAL --> 
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ESTILOS CSS -->
     <link rel="stylesheet" href="css/estilos.css">
-    <script src="../corporacionabad/js/smooth-scroll.min.js"></script>
-    <script>
-        smoothScrill.init({
-            selector: '[data-scroll]',
-            selectorHeader: null,
-            speed: 1000,
-            easing: 'easeInOutCubic',
-            offset: 0,
-            callback: function (anchor, toggle){}
-        });
-    </script>
+
 </head>
 <body>
         <header>
@@ -44,7 +42,7 @@
                 </nav>
     <div class="containter">
         <div class="row">
-            <div class="col m-1">
+            <div class="col m-1 my-auto edm">
                     <h2>Estudios de Mercado</h2>
                     <p class="text-justify">Nuestros especialistas se encargarán de preparar un estudio de mercado, acorde a tus necesidades. Te ayudaremos a conocer a tu competencia, cómo es la perspectiva del mercado peruano en la actualidad y cómo puedes ofrecer tus productos y servicios de una manera más eficiente.</p>
                     <br>
@@ -55,17 +53,17 @@
                     <br>
                     <p class="text-justify">En Corporación Abad tu aliado estratégico también tenemos personal exclusivamente dedicado al desarrollo de proyectos de marketing. Por lo que incluímos en nuestro portafolio la Asesoría Externa en Marketing (AEM) de acuerdo a tus necesidades. La AEM te permitirá generar un ahorro, desarrollar los lineamientos de marketing con mayor efectividad y centrar tus energías en otros objetivos de la institución, dejando en nuestras manos el desarrollo del marketing de tu empresa.</p>
             </div>
-            <div >
-                <img class="col m-1" class="estudio" src="imagenes/mercado2.jpg" alt="Estudios de mercado para tu negocio">
+            <div>
+                <img class="col m-1 estudio" src="imagenes/mercado2.jpg" alt="Estudios de mercado para tu negocio">
             </div>
         </div>
     </div>
     <div class="containter">
         <div class="row">
-            <div>
-                <img class="col m-1" src="imagenes/package.jpg" alt="Paquetería para tus eventos y regalos corporativos">
+            <div class="col m-1 paquetes">
+                <img class="col " src="imagenes/package.jpg" alt="Paquetería para tus eventos y regalos corporativos">
             </div>
-            <div class="col m-1">
+            <div class="col m-1 my-auto pck">
                 <h2>¡Packaging Creativo!</h2>
                 <p class="text-justify">Porque sabemos que te gusta lo mejor, preparamos y armamos tus paquetes de la forma más creativa para marcar una diferencia importante en el mercado peruano. Ya sea que quieras enviar o regalar algo, nosotros lo hacemos de una forma innovadora para tu empresa.</p>
                 <br>
@@ -75,21 +73,21 @@
     </div>
     <div class="containter">
         <div class="row">
-            <div class="col m-1">
+            <div class="col m-1 my-auto unf">
                     <h2>Uniformes escolares</h2>
                     <p class="text-justify">Elaborado con material de la más alta calidad, nuestros uniformes se distinguen por tener mayor resistencia, una calidad inigualable. Podemos realizarlos con los colores de tu institución. Desde camisas,pantalón, chompa hasta el conjunto de casaca y más.</p>
                     <br>
                     <p class="text-justify">Uniformes para tu escuela, institución, universidad, empresa u organización con productos de alta calidad.</p>
             </div>
-            <div >
-            <img class="col m-1" src="imagenes/uniformes.jpg" alt="Uniformes para escuelas e instituciones">
+            <div>
+            <img class="col m-1 uniformes" src="imagenes/uniformes.jpg" alt="Uniformes para escuelas e instituciones">
             </div>
         </div>
     </div>
     <div class="containter section section-blue">
             <div class="row">
               <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <section>
+                <section class="fomulario">
                   <form action="procesar.php" method="POST">
                   <h2 class="contacto">Contáctanos</h2>
                   <p class="text-justify">Si quieres más información, escríbenos y déjanos tus datos y nuestros asesores te llamarán pronto.</p>
@@ -102,7 +100,7 @@
                 </section>
               </div>  
               <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <section>
+                <section class="informacion">
                   <h2>Información</h2>
                   <p>Correo: contacto@corporacionabad.com</p>
                   <p> Teléfono: (51) 936 716 671</p>
@@ -118,6 +116,121 @@
                     <p class="card-text"><a href="https://www.instagram.com/hector_villa" target="_blank">Desarrollado por Héctor Villa León</a></p>
               </div>
             </div>
-<script src="https://widget.sirena.app/get?token=e3601d57154f4522a4c65e695f09be31"></script>
+   <!-- BOOTSTRAP 4 SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>   
+
+    <!-- BOTON WHATSAPP -->
+    <script src="https://widget.sirena.app/get?token=e3601d57154f4522a4c65e695f09be31"></script>
+
+    <!-- SCROLL REVEAL -->
+    <script>
+      window.sr = ScrollReveal();
+      sr.reveal('.navbar',{
+        duration: 2000,
+        origin: 'bottom'
+      });
+      window.sr = ScrollReveal();
+      sr.reveal('.quienesSomos',{
+        duration: 2000,
+        origin: 'top',
+        distance: '300px',
+      });
+      window.sr = ScrollReveal();
+      sr.reveal('.section',{
+        duration: 2000,
+        origin: 'bottom',
+        distance: '300px',
+      });
+      window.sr = ScrollReveal();
+      sr.reveal('.iconos',{
+        duration: 2000,
+        origin: 'topt',
+        distance: '300px',
+      });
+      window.sr = ScrollReveal();
+      sr.reveal('.iconos',{
+        duration: 2000,
+        origin: 'top',
+        distance: '300px',
+      });
+      window.sr = ScrollReveal();
+      sr.reveal('.titulos',{
+        duration: 2000,
+        origin: 'bottom',
+        distance: '300px',
+      });
+      window.sr = ScrollReveal();
+      sr.reveal('.texto',{
+        duration: 2000,
+        origin: 'bottom',
+        distance: '300px',
+      });
+      window.sr = ScrollReveal();
+      sr.reveal('.text-warning',{
+        duration: 2000,
+        origin: 'bottom',
+        distance: '300px',
+      });
+      window.sr = ScrollReveal();
+      sr.reveal('.fomulario',{
+        duration: 2000,
+        origin: 'left',
+        distance: '300px',
+      });
+      window.sr = ScrollReveal();
+      sr.reveal('.informacion',{
+        duration: 2000,
+        origin: 'right',
+        distance: '300px',
+      });
+      window.sr = ScrollReveal();
+      sr.reveal('.estudio',{
+        duration: 2000,
+        origin: 'right',
+        distance: '300px',
+      });
+      window.sr = ScrollReveal();
+      sr.reveal('.paquetes',{
+        duration: 2000,
+        origin: 'left',
+        distance: '300px',
+      });
+      window.sr = ScrollReveal();
+      sr.reveal('.uniformes',{
+        duration: 2000,
+        origin: 'right',
+        distance: '300px',
+      });
+      window.sr = ScrollReveal();
+      sr.reveal('.edm',{
+        duration: 2000,
+        origin: 'left',
+        distance: '300px',
+      });
+      window.sr = ScrollReveal();
+      sr.reveal('.pck',{
+        duration: 2000,
+        origin: 'right',
+        distance: '300px',
+      });
+      window.sr = ScrollReveal();
+      sr.reveal('.unf',{
+        duration: 2000,
+        origin: 'left',
+        distance: '300px',
+      });
+      // smoth scrolling
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+  </script>
 </body>
 </html>
