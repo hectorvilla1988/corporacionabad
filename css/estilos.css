@@ -87,5 +87,9 @@ form {
   }
 
 
-/* IMAGES CLASS */
-
+h1{
+  text-align: center;
+  font-size: 40px;
+  background: rgba(#2bb5fc, 0.5);
+  margin-top: 20px
+}
